@@ -1,0 +1,7 @@
+text=lf
+
+# Inventor files (binary)
+*.ipt binary
+*.iam binary
+*.idw binary
+*.ipn binary

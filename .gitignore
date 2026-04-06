@@ -1,0 +1,11 @@
+# Lock file
+*.lck
+
+# Backup & temp
+*.bak
+*.old
+*.tmp
+
+# Inventor folders
+*/OldVersions/
+*/Backup/

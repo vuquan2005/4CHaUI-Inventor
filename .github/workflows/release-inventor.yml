@@ -1,0 +1,63 @@
+name: Auto Release All Projects
+
+on:
+    push:
+        branches:
+            - main
+        paths-ignore:
+            - ".github/**"
+            - ".gitignore"
+            - ".gitattributes"
+            - "README.md"
+
+jobs:
+    release-all:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+
+            - name: Zip All Project Folders
+              run: |
+                  for DIR in */; do
+                    DIR="${DIR%/}"
+                    
+                    if [[ "$DIR" == .* ]]; then
+                      continue
+                    fi
+
+                    zip -r "${DIR}.zip" "$DIR" \
+                      -x "*/OldVersions/*" \
+                      -x "*.bak" \
+                      -x "*.lck" \
+                      -x "*.tmp"
+                    echo "✅ Created: ${DIR}.zip ($(du -sh ${DIR}.zip | cut -f1))"
+                  done
+
+            - name: Update All Rolling Releases
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+                  SHORT_SHA="${{ github.sha }}"
+                  SHORT_SHA="${SHORT_SHA:0:7}"
+
+                  for ZIP_FILE in *.zip; do
+                    TAG_NAME="${ZIP_FILE%.zip}"
+
+                    echo "🗑️ Delete old releases: $TAG_NAME"
+                    gh release delete "$TAG_NAME" --cleanup-tag -y || true
+                    sleep 2
+
+                    echo "🚀 Creating new release: $TAG_NAME"
+                    gh release create "$TAG_NAME" "$ZIP_FILE" \
+                      --title "📦 $TAG_NAME (latest)" \
+                      --notes "**Commit:** [\`$SHORT_SHA\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
+                  **Timestamp:** $TIMESTAMP
+                  **Trigger by:** ${{ github.actor }}"
+
+                    echo "✅ Done: $TAG_NAME"
+                  done
