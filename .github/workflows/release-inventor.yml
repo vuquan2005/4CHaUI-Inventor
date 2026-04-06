@@ -69,13 +69,15 @@ jobs:
                     
                     sleep 2
 
+                    RELEASE_NOTES="### 📝 Update Information
+                    - **Project:** \`$DIR\`
+                    - **Last modified in commit:** [\`$SHORT_SHA\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
+                    - **Time:** $TIMESTAMP
+                    - **Triggered by:** @${{ github.actor }}"
+
                     gh release create "$DIR" "${DIR}.zip" \
-                      --title "📦 $DIR (Latest Version)" \
-                      --notes "### 📝 Update Information
-                      - **Project:** \`$DIR\`
-                      - **Last modified in commit:** [\`$SHORT_SHA\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
-                      - **Time:** $TIMESTAMP
-                      - **Triggered by:** @${{ github.actor }}"
+                        --title "$DIR" \
+                        --notes "$RELEASE_NOTES"
                       
                     echo "✅ Successfully updated project: $DIR"
                   done
