@@ -1,4 +1,4 @@
-name: Auto Release All Projects
+name: Release Inventor
 
 on:
     push:
@@ -11,7 +11,7 @@ on:
             - "README.md"
 
 jobs:
-    release-all:
+    release-projects:
         runs-on: ubuntu-latest
         permissions:
             contents: write
@@ -19,45 +19,61 @@ jobs:
         steps:
             - name: Checkout Repository
               uses: actions/checkout@v4
+              with:
+                  fetch-depth: 2
 
-            - name: Zip All Project Folders
+            - name: Zip and Release Changed Projects
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
+                  TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+                  FULL_SHA="${{ github.sha }}"
+                  SHORT_SHA="${FULL_SHA:0:7}"
+
+                  if git rev-parse HEAD^ >/dev/null 2>&1; then
+                    DIFF_BASE="HEAD^"
+                    echo "🔍 So sánh thay đổi với commit trước ($DIFF_BASE)"
+                  else
+                    DIFF_BASE=""
+                    echo "⚠️ Commit đầu tiên - Sẽ nén tất cả các thư mục hiện có."
+                  fi
+
                   for DIR in */; do
-                    DIR="${DIR%/}"
-                    
-                    if [[ "$DIR" == .* ]]; then
-                      continue
+                    DIR="${DIR%/}" # Loại bỏ dấu / ở cuối tên thư mục
+
+                    if [[ "$DIR" == .* ]]; then continue; fi
+
+                    if [[ -n "$DIFF_BASE" ]]; then
+                      if git diff --quiet "$DIFF_BASE" HEAD -- "$DIR"; then
+                        echo "⏩ Bỏ qua [$DIR]: Không có thay đổi."
+                        continue
+                      fi
                     fi
+
+                    echo "🛠️ Đang xử lý dự án: $DIR"
 
                     zip -r "${DIR}.zip" "$DIR" \
                       -x "*/OldVersions/*" \
                       -x "*.bak" \
                       -x "*.lck" \
-                      -x "*.tmp"
-                    echo "✅ Created: ${DIR}.zip ($(du -sh ${DIR}.zip | cut -f1))"
-                  done
+                      -x "*.tmp" \
+                      -x "*/.git*"
 
-            - name: Update All Rolling Releases
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
-                  SHORT_SHA="${{ github.sha }}"
-                  SHORT_SHA="${SHORT_SHA:0:7}"
-
-                  for ZIP_FILE in *.zip; do
-                    TAG_NAME="${ZIP_FILE%.zip}"
-
-                    echo "🗑️ Delete old releases: $TAG_NAME"
-                    gh release delete "$TAG_NAME" --cleanup-tag -y || true
+                    echo "♻️ Cập nhật Rolling Tag cho: $DIR"
+                    gh release delete "$DIR" --cleanup-tag -y || true
+                    
                     sleep 2
 
-                    echo "🚀 Creating new release: $TAG_NAME"
-                    gh release create "$TAG_NAME" "$ZIP_FILE" \
-                      --title "📦 $TAG_NAME (latest)" \
-                      --notes "**Commit:** [\`$SHORT_SHA\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
-                  **Timestamp:** $TIMESTAMP
-                  **Trigger by:** ${{ github.actor }}"
+                    gh release create "$DIR" "${DIR}.zip" \
+                      --title "📦 $DIR (Bản mới nhất)" \
+                      --notes "### 📝 Thông tin cập nhật
+                      - **Project:** \`$DIR\`
+                      - **Lần cuối thay đổi tại commit:** [\`$SHORT_SHA\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
+                      - **Thời gian:** $TIMESTAMP
+                      - **Thực hiện bởi:** @${{ github.actor }}
+                      
+                      ---
+                      *Lưu ý: Đây là Rolling Release. File ZIP bên dưới luôn là phiên bản mới nhất của thư mục này.*"
 
-                    echo "✅ Done: $TAG_NAME"
+                    echo "✅ Đã cập nhật xong dự án: $DIR"
                   done
