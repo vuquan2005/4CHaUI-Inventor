@@ -1,4 +1,10 @@
-# Ảnh của BTB1
+# BTB1
+
+[📥 Tải BTB1](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB1/BTB1.zip)
+
+---
+
+## 📷 Hình ảnh
 
 ![b1.png](img/b1.png)
 
@@ -15,15 +21,15 @@
 <details>
 <summary>BBCode</summary>
 
-[img]https://raw.githubusercontent.com/vuquan2005/[tên-repo-của-bạn]/main/BTB1/img/b1.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB1/img/b1.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/[tên-repo-của-bạn]/main/BTB1/img/b2.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB1/img/b2.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/[tên-repo-của-bạn]/main/BTB1/img/b3.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB1/img/b3.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/[tên-repo-của-bạn]/main/BTB1/img/b4.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB1/img/b4.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/[tên-repo-của-bạn]/main/BTB1/img/b5.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB1/img/b5.png[/img]
 
 </details>
 

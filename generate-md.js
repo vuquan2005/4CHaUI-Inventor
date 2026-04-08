@@ -5,37 +5,28 @@ const path = require("path");
 const CONFIG = {
     IMAGE_EXTENSIONS: [".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp"],
     MD_FILENAME: "README.md",
-    REPO_NAME: "tên-repo-của-bạn", // Thay bằng tên repo của bạn
-    // Cấu trúc link raw của GitHub: https://raw.githubusercontent.com/<username>/<repo>/<branch>
-    GITHUB_RAW_BASE: `https://raw.githubusercontent.com/vuquan2005/${CONFIG.REPO_NAME}/main`,
+    GITHUB_USERNAME: "vuquan2005", // Thay username nếu cần
+    REPO_NAME: "4CHaUI-Inventor", // <-- ĐIỀN TÊN REPO VÀO ĐÂY
+    BRANCH: "main",
 };
 
 // --- CÁC HÀM TIỆN ÍCH (UTILITIES) ---
 
-/**
- * Lấy danh sách các thư mục con trong một thư mục
- */
 async function getSubDirectories(baseDir) {
     const items = await fs.readdir(baseDir, { withFileTypes: true });
     return items.filter((item) => item.isDirectory()).map((item) => item.name);
 }
 
-/**
- * Kiểm tra xem một đường dẫn có phải là thư mục và có tồn tại không
- */
 async function isDirectoryExists(dirPath) {
     try {
         const stat = await fs.stat(dirPath);
         return stat.isDirectory();
     } catch (err) {
         if (err.code === "ENOENT") return false;
-        throw err; // Ném lỗi nếu là lỗi khác (ví dụ: thiếu quyền truy cập)
+        throw err;
     }
 }
 
-/**
- * Lấy danh sách các file ảnh trong một thư mục
- */
 async function getImageFiles(dirPath) {
     const files = await fs.readdir(dirPath);
     return files.filter((file) => {
@@ -47,8 +38,13 @@ async function getImageFiles(dirPath) {
 // --- CÁC HÀM TẠO NỘI DUNG (GENERATORS) ---
 
 /**
- * Tạo nội dung chuỗi Markdown cho ảnh
+ * MỚI: Tạo nội dung link tải Release từ GitHub
  */
+function generateDownloadLink(folderName) {
+    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${folderName}/${folderName}.zip`;
+    return `[📥 Tải ${folderName}](${downloadUrl})\n\n`;
+}
+
 function generateMarkdownLinks(imageFiles) {
     let content = "";
     imageFiles.forEach((img) => {
@@ -57,38 +53,26 @@ function generateMarkdownLinks(imageFiles) {
     return content;
 }
 
-/**
- * Tạo nội dung chuỗi MyBB (BBCode) sử dụng link GitHub, bọc trong thẻ <details>
- */
 function generateMyBBLinks(parentFolderName, imageFiles) {
     let content = "";
-
-    // Mở thẻ details và summary
     content += `<details>\n`;
     content += `<summary>BBCode</summary>\n\n`;
 
-    // Thêm các link ảnh
     imageFiles.forEach((img) => {
-        const githubUrl = `${CONFIG.GITHUB_RAW_BASE}/${parentFolderName}/img/${img}`;
+        const githubUrl = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/${CONFIG.BRANCH}/${parentFolderName}/img/${img}`;
         content += `[img]${githubUrl}[/img]\n\n`;
     });
 
-    // Đóng thẻ details
     content += `</details>\n\n`;
-
     return content;
 }
 
 // --- HÀM XỬ LÝ CHÍNH ---
 
-/**
- * Xử lý tạo file README.md cho một thư mục cụ thể
- */
 async function processSingleFolder(folderName, baseDir) {
     const folderPath = path.join(baseDir, folderName);
     const imgDirPath = path.join(folderPath, "img");
 
-    // Bỏ qua nếu không có thư mục 'img'
     const hasImgFolder = await isDirectoryExists(imgDirPath);
     if (!hasImgFolder) return;
 
@@ -101,12 +85,18 @@ async function processSingleFolder(folderName, baseDir) {
         }
 
         // Xây dựng nội dung file
-        let fileContent = `# Ảnh của ${folderName}\n\n`;
+        let fileContent = `# ${folderName}\n\n`;
+
+        fileContent += generateDownloadLink(folderName);
+        fileContent += `---\n\n`;
+
+        fileContent += `## 📷 Hình ảnh\n\n`;
+
         fileContent += generateMarkdownLinks(imageFiles);
         fileContent += `---\n\n`;
+
         fileContent += generateMyBBLinks(folderName, imageFiles);
 
-        // Ghi ra file README.md
         const mdFilePath = path.join(folderPath, CONFIG.MD_FILENAME);
         await fs.writeFile(mdFilePath, fileContent, "utf8");
 
@@ -116,9 +106,6 @@ async function processSingleFolder(folderName, baseDir) {
     }
 }
 
-/**
- * Hàm khởi chạy toàn bộ quy trình
- */
 async function startProcess() {
     const baseDir = __dirname;
 
