@@ -21,6 +21,10 @@
 <details>
 <summary>BBCode</summary>
 
+https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/5ngaytuhoc/5ngaytuhoc.zip
+
+Ảnh:
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/5ngaytuhoc/img/b1.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/5ngaytuhoc/img/b2-1.png[/img]
