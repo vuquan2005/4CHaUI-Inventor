@@ -58,21 +58,20 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
     content += `<details>\n`;
     content += `<summary>BBCode</summary>\n\n`;
 
-    let summaryText = `\`\`\`\n`;
+    content = `\`\`\`\n`;
 
-    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip\n\n`;
-    summaryText += `${downloadUrl}`;
+    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip`;
+    content += `[url=${downloadUrl}]${parentFolderName}.zip[/url]\n\n`;
 
-    summaryText += `Link ảnh:\n\n`;
+    content += `Link ảnh:\n\n`;
 
     imageFiles.forEach((img) => {
-        const githubUrl = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/refs/heads/${CONFIG.BRANCH}/${parentFolderName}/img/${img}`;
-        summaryText += `[img]${githubUrl}[/img]\n\n`;
+        const githubUrl = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/${CONFIG.BRANCH}/${parentFolderName}/img/${img}`;
+        content += `[img]${githubUrl}[/img]\n\n`;
     });
 
-    summaryText += `\`\`\`\n\n`;
+    content += `\`\`\`\n\n`;
 
-    content += summaryText;
     content += `</details>\n\n`;
     return content;
 }
