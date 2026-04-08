@@ -58,16 +58,21 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
     content += `<details>\n`;
     content += `<summary>BBCode</summary>\n\n`;
 
-    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip\n\n`;
-    content += `${downloadUrl}`;
+    let summaryText = `\`\`\`\n`;
 
-    content += `Ảnh:\n\n`;
+    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip\n\n`;
+    summaryText += `${downloadUrl}`;
+
+    summaryText += `\n\nLink ảnh:\n\n`;
 
     imageFiles.forEach((img) => {
         const githubUrl = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/refs/heads/${CONFIG.BRANCH}/${parentFolderName}/img/${img}`;
-        content += `[img]${githubUrl}[/img]\n\n`;
+        summaryText += `[img]${githubUrl}[/img]\n\n`;
     });
 
+    summaryText += `\`\`\`\n`;
+
+    content += summaryText;
     content += `</details>\n\n`;
     return content;
 }
