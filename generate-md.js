@@ -98,14 +98,12 @@ async function processSingleFolder(folderName, baseDir) {
         let fileContent = `# ${folderName}\n\n`;
 
         fileContent += generateDownloadLink(folderName);
-        fileContent += `---\n\n`;
+
+        fileContent += generateMyBBLinks(folderName, imageFiles);
 
         fileContent += `## 📷 Hình ảnh\n\n`;
 
         fileContent += generateMarkdownLinks(imageFiles);
-        fileContent += `---\n\n`;
-
-        fileContent += generateMyBBLinks(folderName, imageFiles);
 
         const mdFilePath = path.join(folderPath, CONFIG.MD_FILENAME);
         await fs.writeFile(mdFilePath, fileContent, "utf8");
