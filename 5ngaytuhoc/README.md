@@ -24,9 +24,7 @@
 ```
 https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/5ngaytuhoc/5ngaytuhoc.zip
 
-
-
-Ảnh:
+Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/5ngaytuhoc/img/b1.png[/img]
 
@@ -38,5 +36,7 @@ https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/5ngaytuhoc/5ngay
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/5ngaytuhoc/img/b3-2.png[/img]
 
-```</details>
+```
+
+</details>
 

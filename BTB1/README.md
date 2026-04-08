@@ -24,9 +24,7 @@
 ```
 https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB1/BTB1.zip
 
-
-
-Ảnh:
+Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b1.png[/img]
 
@@ -38,5 +36,7 @@ https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB1/BTB1.zip
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b5.png[/img]
 
-```</details>
+```
+
+</details>
 
