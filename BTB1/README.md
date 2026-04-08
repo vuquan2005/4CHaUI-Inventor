@@ -21,15 +21,15 @@
 <details>
 <summary>BBCode</summary>
 
-[img]https://github.com/vuquan2005/4CHaUI-Inventor/blob/main/BTB1/img/b1.png?raw=true[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b1.png[/img]
 
-[img]https://github.com/vuquan2005/4CHaUI-Inventor/blob/main/BTB1/img/b2.png?raw=true[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b2.png[/img]
 
-[img]https://github.com/vuquan2005/4CHaUI-Inventor/blob/main/BTB1/img/b3.png?raw=true[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b3.png[/img]
 
-[img]https://github.com/vuquan2005/4CHaUI-Inventor/blob/main/BTB1/img/b4.png?raw=true[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b4.png[/img]
 
-[img]https://github.com/vuquan2005/4CHaUI-Inventor/blob/main/BTB1/img/b5.png?raw=true[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/refs/heads/main/BTB1/img/b5.png[/img]
 
 </details>
 

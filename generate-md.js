@@ -59,7 +59,7 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
     content += `<summary>BBCode</summary>\n\n`;
 
     imageFiles.forEach((img) => {
-        const githubUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/blob/${CONFIG.BRANCH}/${parentFolderName}/img/${img}?raw=true`;
+        const githubUrl = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/refs/heads/${CONFIG.BRANCH}/${parentFolderName}/img/${img}`;
         content += `[img]${githubUrl}[/img]\n\n`;
     });
 
