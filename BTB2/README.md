@@ -24,6 +24,8 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB2/img/b2-6.png[/img]
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB2/img/B2-7.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB2/img/b2.png[/img]
 
 ```
@@ -45,6 +47,8 @@ Link ảnh:
 ![b2-5.png](img/b2-5.png)
 
 ![b2-6.png](img/b2-6.png)
+
+![B2-7.png](img/B2-7.png)
 
 ![b2.png](img/b2.png)
 
