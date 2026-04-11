@@ -2,6 +2,9 @@
 
 [📥 Tải 5ngaytuhoc](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/5ngaytuhoc/5ngaytuhoc.zip)
 
+<details>
+<summary>BBCode</summary>
+
 ```
 [url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/5ngaytuhoc/5ngaytuhoc.zip]5ngaytuhoc.zip[/url]
 

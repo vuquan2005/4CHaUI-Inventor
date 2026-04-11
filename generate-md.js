@@ -58,7 +58,7 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
     content += `<details>\n`;
     content += `<summary>BBCode</summary>\n\n`;
 
-    content = `\`\`\`\n`;
+    content += `\`\`\`\n`;
 
     const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip`;
     content += `[url=${downloadUrl}]${parentFolderName}.zip[/url]\n\n`;

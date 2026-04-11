@@ -2,6 +2,9 @@
 
 [📥 Tải BTB1](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB1/BTB1.zip)
 
+<details>
+<summary>BBCode</summary>
+
 ```
 [url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB1/BTB1.zip]BTB1.zip[/url]
 
