@@ -67,7 +67,7 @@ jobs:
                     echo "♻️ Updating Rolling Tag for: $DIR"
                     gh release delete "$DIR" --cleanup-tag -y || true
                     
-                    sleep 2
+                    sleep 5
 
                     RELEASE_NOTES="### 📝 Update Information
                     - **Project:** \`$DIR\`
