@@ -79,6 +79,31 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
     return content;
 }
 
+function generateRootSection(folderName, imageFiles) {
+    let content = "";
+    content += `<details>\n`;
+    content += `<summary>${folderName}</summary>\n\n`;
+
+    imageFiles.forEach((img) => {
+        content += `![${img}](${folderName}/img/${img})\n\n`;
+    });
+
+    content += `</details>\n\n`;
+    return content;
+}
+
+async function writeRootReadme(foldersData, baseDir) {
+    let fileContent = `# ${CONFIG.REPO_NAME}\n\n`;
+
+    foldersData.forEach(({ folderName, imageFiles }) => {
+        fileContent += generateRootSection(folderName, imageFiles);
+    });
+
+    const rootReadmePath = path.join(baseDir, CONFIG.MD_FILENAME);
+    await fs.writeFile(rootReadmePath, fileContent, "utf8");
+    console.log(`Đã tạo thành công: ${rootReadmePath}`);
+}
+
 // --- HÀM XỬ LÝ CHÍNH ---
 
 async function processSingleFolder(folderName, baseDir) {
@@ -86,14 +111,14 @@ async function processSingleFolder(folderName, baseDir) {
     const imgDirPath = path.join(folderPath, "img");
 
     const hasImgFolder = await isDirectoryExists(imgDirPath);
-    if (!hasImgFolder) return;
+    if (!hasImgFolder) return null;
 
     try {
         const imageFiles = await getImageFiles(imgDirPath);
 
         if (imageFiles.length === 0) {
             console.log(`Bỏ qua: ${imgDirPath} (Không có file ảnh nào)`);
-            return;
+            return null;
         }
 
         // Xây dựng nội dung file
@@ -111,8 +136,10 @@ async function processSingleFolder(folderName, baseDir) {
         await fs.writeFile(mdFilePath, fileContent, "utf8");
 
         console.log(`Đã tạo thành công: ${mdFilePath}`);
+        return { folderName, imageFiles };
     } catch (err) {
         console.error(`Lỗi khi xử lý tại ${folderPath}:`, err);
+        return null;
     }
 }
 
@@ -121,9 +148,19 @@ async function startProcess() {
 
     try {
         const directories = await getSubDirectories(baseDir);
+        const foldersData = [];
 
         for (const folderName of directories) {
-            await processSingleFolder(folderName, baseDir);
+            const folderData = await processSingleFolder(folderName, baseDir);
+            if (folderData) {
+                foldersData.push(folderData);
+            }
+        }
+
+        if (foldersData.length > 0) {
+            await writeRootReadme(foldersData, baseDir);
+        } else {
+            console.log("Không có thư mục nào có ảnh để tạo README gốc.");
         }
 
         console.log("✅ Quá trình tạo file markdown đã hoàn tất!");

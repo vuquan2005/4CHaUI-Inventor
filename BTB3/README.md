@@ -26,7 +26,7 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB3/img/b7.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB3/img/Logo Asus TUF.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB3/img/LogoAsusTUF.png[/img]
 
 ```
 
@@ -48,5 +48,5 @@ Link ảnh:
 
 ![b7.png](img/b7.png)
 
-![Logo Asus TUF.png](img/Logo Asus TUF.png)
+![LogoAsusTUF.png](img/LogoAsusTUF.png)
 
