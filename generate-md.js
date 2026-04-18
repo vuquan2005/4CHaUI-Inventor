@@ -60,6 +60,9 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
 
     content += `\`\`\`\n`;
 
+    const folderUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/tree/${CONFIG.BRANCH}/${parentFolderName}`;
+    content += `[url=${folderUrl}]${parentFolderName}[/url]\n\n`;
+
     const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip`;
     content += `[url=${downloadUrl}]${parentFolderName}.zip[/url]\n\n`;
 

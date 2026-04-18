@@ -6,6 +6,8 @@
 <summary>BBCode</summary>
 
 ```
+[url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/BTB2]BTB2[/url]
+
 [url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB2/BTB2.zip]BTB2.zip[/url]
 
 Link ảnh:
