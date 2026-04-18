@@ -36,22 +36,22 @@ Link ảnh:
 
 ## 📷 Hình ảnh
 
-![4LO.png](img/4LO.png)
+![4LO.png](img/4LO.png "4LO.png")
 
-![b2-1.png](img/b2-1.png)
+![b2-1.png](img/b2-1.png "b2-1.png")
 
-![b2-2.png](img/b2-2.png)
+![b2-2.png](img/b2-2.png "b2-2.png")
 
-![b2-3.png](img/b2-3.png)
+![b2-3.png](img/b2-3.png "b2-3.png")
 
-![b2-4.png](img/b2-4.png)
+![b2-4.png](img/b2-4.png "b2-4.png")
 
-![b2-5.png](img/b2-5.png)
+![b2-5.png](img/b2-5.png "b2-5.png")
 
-![b2-6.png](img/b2-6.png)
+![b2-6.png](img/b2-6.png "b2-6.png")
 
-![B2-7.png](img/B2-7.png)
+![B2-7.png](img/B2-7.png "B2-7.png")
 
-![b2.png](img/b2.png)
+![b2.png](img/b2.png "b2.png")
 
 

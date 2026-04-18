@@ -46,7 +46,7 @@ function Get-MyBBLinks($folderName, $imageFiles) {
 function Get-RootSection($folderName, $imageFiles) {
     $content = "<details>`n<summary>$folderName</summary>`n`n"
     foreach ($img in $imageFiles) {
-        $content += "![$($img.Name)]($folderName/img/$($img.Name))`n`n"
+        $content += "![$($img.Name)]($folderName/img/$($img.Name) `"$($img.Name)`")`n`n"
     }
     $content += "</details>`n`n"
     return $content
@@ -77,7 +77,7 @@ foreach ($dir in $subDirs) {
             $subMdContent += "## 📷 Hình ảnh`n`n"
             
             foreach ($img in $imageFiles) {
-                $subMdContent += "![$($img.Name)](img/$($img.Name))`n`n"
+                $subMdContent += "![$($img.Name)](img/$($img.Name) `"$($img.Name)`")`n`n"
             }
             
             # Ghi file README con

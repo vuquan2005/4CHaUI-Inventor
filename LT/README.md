@@ -24,10 +24,10 @@ Link ảnh:
 
 ## 📷 Hình ảnh
 
-![bat.png](img/bat.png)
+![bat.png](img/bat.png "bat.png")
 
-![mask.png](img/mask.png)
+![mask.png](img/mask.png "mask.png")
 
-![wolf.png](img/wolf.png)
+![wolf.png](img/wolf.png "wolf.png")
 
 

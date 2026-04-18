@@ -48,7 +48,7 @@ function generateDownloadLink(folderName) {
 function generateMarkdownLinks(imageFiles) {
     let content = "";
     imageFiles.forEach((img) => {
-        content += `![${img}](img/${img})\n\n`;
+        content += `![${img}](img/${img} "${img}")\n\n`;
     });
     return content;
 }
@@ -85,7 +85,7 @@ function generateRootSection(folderName, imageFiles) {
     content += `<summary>${folderName}</summary>\n\n`;
 
     imageFiles.forEach((img) => {
-        content += `![${img}](${folderName}/img/${img})\n\n`;
+        content += `![${img}](${folderName}/img/${img} "${img}")\n\n`;
     });
 
     content += `</details>\n\n`;
