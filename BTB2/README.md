@@ -54,4 +54,3 @@ Link ảnh:
 
 ![b2.png](img/b2.png "b2.png")
 
-

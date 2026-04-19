@@ -132,8 +132,6 @@ async function processSingleFolder(folderName, baseDir) {
 
         fileContent += generateMarkdownLinks(imageFiles);
 
-        fileContent += `\n`;
-
         const mdFilePath = path.join(folderPath, CONFIG.MD_FILENAME);
         await fs.writeFile(mdFilePath, fileContent, "utf8");
 

@@ -30,4 +30,3 @@ Link ảnh:
 
 ![wolf.png](img/wolf.png "wolf.png")
 
-

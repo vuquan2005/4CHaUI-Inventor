@@ -18,6 +18,12 @@ function Get-ImageFiles($dirPath) {
 
 # --- HÀM TẠO NỘI DUNG ---
 
+$Utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+
+function Write-Utf8NoBomFile($path, $content) {
+    [System.IO.File]::WriteAllText($path, $content, $Utf8NoBom)
+}
+
 function Get-DownloadLink($folderName) {
     $url = "https://github.com/$($CONFIG.GITHUB_USERNAME)/$($CONFIG.REPO_NAME)/releases/download/$folderName/$folderName.zip"
     return "[📥 Tải $folderName]($url)`n`n"
@@ -82,7 +88,7 @@ foreach ($dir in $subDirs) {
             
             # Ghi file README con
             $subMdPath = Join-Path $dir.FullName $CONFIG.MD_FILENAME
-            $subMdContent | Set-Content -Path $subMdPath -Encoding utf8
+            Write-Utf8NoBomFile -path $subMdPath -content $subMdContent
 
             # Lưu dữ liệu để làm README gốc
             $foldersData += [PSCustomObject]@{
@@ -101,7 +107,7 @@ if ($foldersData.Count -gt 0) {
     }
     
     $rootMdPath = Join-Path $baseDir $CONFIG.MD_FILENAME
-    $rootMdContent | Out-File -FilePath $rootMdPath -Encoding utf8
+    Write-Utf8NoBomFile -path $rootMdPath -content $rootMdContent
     Write-Host "✅ Đã tạo thành công README gốc: $rootMdPath" -ForegroundColor Green
 }
 else {

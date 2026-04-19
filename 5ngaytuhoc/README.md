@@ -38,4 +38,3 @@ Link ảnh:
 
 ![b3-2.png](img/b3-2.png "b3-2.png")
 
-
