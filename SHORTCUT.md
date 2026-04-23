@@ -22,11 +22,13 @@
 | 1    | Coincident    | Trùng điểm |
 | 2    | Parallel      | Song song  |
 | 3    | Collinear     | Thẳng hàng |
-| 4    | Perpendicular | Vuông góc  |
+| 4    | Symmetric     | Đối xứng   |
 | 5    | Equal         | Bằng nhau  |
 | 6    | Tangent       | Tiếp tuyến |
+| B    | Equal         | Bằng nhau  |
 | H    | Horizontal    | Ngang      |
 | J    | Vertical      | Dọc        |
+| I    | Snap Intersection | Giao điểm |
 
 ---
 
@@ -34,7 +36,7 @@
 
 | Phím | Lệnh   | Ghi chú      |
 | ---- | ------ | ------------ |
-| B    | Offset | Offset       |
+| O    | Offset | Offset       |
 | F    | Fillet | Bo góc       |
 | X    | Trim   | Cắt          |
 | E    | Extend | Kéo dài      |
@@ -53,7 +55,7 @@
 
 ---
 
-## 5. Format
+## 6. Format
 
 | Phím | Lệnh         | Ghi chú            |
 | ---- | ------------ | ------------------ |
