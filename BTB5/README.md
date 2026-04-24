@@ -22,6 +22,12 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB5/img/bat.png[/img]
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB5/img/bua1.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB5/img/cho.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB5/img/coLe.png[/img]
+
 ```
 
 </details>
@@ -37,4 +43,10 @@ Link ảnh:
 ![b9.png](img/b9.png "b9.png")
 
 ![bat.png](img/bat.png "bat.png")
+
+![bua1.png](img/bua1.png "bua1.png")
+
+![cho.png](img/cho.png "cho.png")
+
+![coLe.png](img/coLe.png "coLe.png")
 

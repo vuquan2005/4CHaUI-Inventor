@@ -14,6 +14,10 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/bat.png[/img]
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/engine.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/HaUI.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/mask.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/wolf.png[/img]
@@ -25,6 +29,10 @@ Link ảnh:
 ## 📷 Hình ảnh
 
 ![bat.png](img/bat.png "bat.png")
+
+![engine.png](img/engine.png "engine.png")
+
+![HaUI.png](img/HaUI.png "HaUI.png")
 
 ![mask.png](img/mask.png "mask.png")
 

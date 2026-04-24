@@ -7,28 +7,25 @@
 | L    | Line                | Vẽ đoạn thẳng |
 | C    | Center Point Circle | Vẽ đường tròn |
 | A    | Three Point Arc     | Cung 3 điểm   |
-| A1   | Center Point Arc    | Cung tâm      |
-| R    | Two Point Rectangle | HCN 2 điểm    |
-| R2   | Center Rectangle    | HCN từ tâm    |
-| R1   | Polygon             | Đa giác       |
+| R    | Polygon             | Đa giác       |
 
 ---
 
 ## 📏 2. Nhóm ràng buộc (Constrain)
 
-| Phím | Lệnh          | Ghi chú    |
-| ---- | ------------- | ---------- |
-| D    | Dimension     | Kích thước |
-| 1    | Coincident    | Trùng điểm |
-| 2    | Parallel      | Song song  |
-| 3    | Collinear     | Thẳng hàng |
-| 4    | Symmetric     | Đối xứng   |
-| 5    | Equal         | Bằng nhau  |
-| 6    | Tangent       | Tiếp tuyến |
-| B    | Equal         | Bằng nhau  |
-| H    | Horizontal    | Ngang      |
-| J    | Vertical      | Dọc        |
-| I    | Snap Intersection | Giao điểm |
+| Phím | Lệnh              | Ghi chú    |
+| ---- | ----------------- | ---------- |
+| D    | Dimension         | Kích thước |
+| 1    | Coincident        | Trùng điểm |
+| 2    | Parallel          | Song song  |
+| 3    | Collinear         | Thẳng hàng |
+| 4    | Symmetric         | Đối xứng   |
+| 5    | Equal             | Bằng nhau  |
+| 6    | Tangent           | Tiếp tuyến |
+| B    | Equal             | Bằng nhau  |
+| H    | Horizontal        | Ngang      |
+| J    | Vertical          | Dọc        |
+| I    | Snap Intersection | Giao điểm  |
 
 ---
 
