@@ -1,26 +1,30 @@
-# LT
+# BTB6
 
-[📥 Tải LT](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/LT/LT.zip)
+[📥 Tải BTB6](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB6/BTB6.zip)
 
 <details>
 <summary>BBCode</summary>
 
 ```
-[url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/LT]LT[/url]
+[url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/BTB6]BTB6[/url]
 
-[url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/LT/LT.zip]LT.zip[/url]
+[url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB6/BTB6.zip]BTB6.zip[/url]
 
 Link ảnh:
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/bat.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/engine.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/engine.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/HaUI.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/HaUI.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/mask.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/mask.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/v8testVer56-1.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/LT/img/wolf.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/v8testVer56-2.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/v8testVer56-3.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/BTB6/img/wolf.png[/img]
 
 ```
 
@@ -28,13 +32,17 @@ Link ảnh:
 
 ## 📷 Hình ảnh
 
-![bat.png](img/bat.png "bat.png")
-
 ![engine.png](img/engine.png "engine.png")
 
 ![HaUI.png](img/HaUI.png "HaUI.png")
 
 ![mask.png](img/mask.png "mask.png")
+
+![v8testVer56-1.png](img/v8testVer56-1.png "v8testVer56-1.png")
+
+![v8testVer56-2.png](img/v8testVer56-2.png "v8testVer56-2.png")
+
+![v8testVer56-3.png](img/v8testVer56-3.png "v8testVer56-3.png")
 
 ![wolf.png](img/wolf.png "wolf.png")
 
