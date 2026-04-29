@@ -1,17 +1,16 @@
-# 📐 Inventor Sketch – Lệnh hay dùng & Phím tắt
+# 📐 Inventor Sketch – Phím tắt
 
-## ✏️ 1. Nhóm vẽ (Create)
+## ✏️ 1. Vẽ & Hình học
 
 | Phím | Lệnh                | Ghi chú       |
 | ---- | ------------------- | ------------- |
-| L    | Line                | Vẽ đoạn thẳng |
+| Z    | Line                | Vẽ đoạn thẳng |
 | C    | Center Point Circle | Vẽ đường tròn |
 | A    | Three Point Arc     | Cung 3 điểm   |
-| R    | Polygon             | Đa giác       |
+| R6   | Polygon             | Đa giác       |
+| Y    | Point, Center Point | Vẽ điểm / tâm |
 
----
-
-## 📏 2. Nhóm ràng buộc (Constrain)
+## 📏 2. Ràng buộc
 
 | Phím | Lệnh              | Ghi chú    |
 | ---- | ----------------- | ---------- |
@@ -20,41 +19,46 @@
 | 2    | Parallel          | Song song  |
 | 3    | Collinear         | Thẳng hàng |
 | 4    | Symmetric         | Đối xứng   |
-| 5    | Equal             | Bằng nhau  |
-| 6    | Tangent           | Tiếp tuyến |
+| 5    | Tangent           | Tiếp tuyến |
+| 6    | Concentric        | Đồng tâm   |
+| 7    | Perpendicular     | Vuông góc  |
 | B    | Equal             | Bằng nhau  |
 | H    | Horizontal        | Ngang      |
 | J    | Vertical          | Dọc        |
 | I    | Snap Intersection | Giao điểm  |
 
----
-
-## 🛠️ 3. Nhóm chỉnh sửa (Modify)
+## 🛠️ 3. Chỉnh sửa
 
 | Phím | Lệnh   | Ghi chú      |
 | ---- | ------ | ------------ |
 | O    | Offset | Offset       |
 | F    | Fillet | Bo góc       |
-| X    | Trim   | Cắt          |
 | E    | Extend | Kéo dài      |
+| X    | Trim   | Cắt          |
 | S    | Split  | Cắt tại điểm |
 
----
+## 🔁 4. Pattern & Phụ trợ
 
-## 🔁 4. Pattern & phụ trợ
+| Phím | Lệnh                       | Ghi chú          |
+| ---- | -------------------------- | ---------------- |
+| V    | Mirror                     | Đối xứng         |
+| R1   | Two Point Center Rectangle | Rectangle 2 điểm |
+| R4   | Rectangular Pattern        | Pattern chữ nhật |
+| G    | Project Geometry           | Chiếu hình       |
 
-| Phím | Lệnh                | Ghi chú          |
-| ---- | ------------------- | ---------------- |
-| V    | Mirror              | Đối xứng         |
-| C4   | Circular Pattern    | Pattern tròn     |
-| R4   | Rectangular Pattern | Pattern chữ nhật |
-| G    | Project Geometry    | Chiếu hình       |
+## ⚡ 5. Phím tắt mở rộng
 
----
+| Phím         | Lệnh                     | Ghi chú                    |
+| ------------ | ------------------------ | -------------------------- |
+| Ctrl+D       | Dynamic Dimension        | Kích thước động            |
+| Ctrl+I       | Toggle Infer Constraints | Bật/tắt suy luận ràng buộc |
+| Ctrl+R       | Toggle Ortho Mode        | Bật/tắt chế độ Orthogonal  |
+| Ctrl+Shift+P | Snap Object              | Bắt điểm đối tượng         |
+| F7           | Slice Graphics           | Cắt hiển thị đồ họa        |
 
-## 6. Format
+## 🧩 6. Định dạng & Trợ giúp
 
-| Phím | Lệnh         | Ghi chú            |
-| ---- | ------------ | ------------------ |
-| W    | Construction | Đường construction |
-| Q    | Centerline   | Đường tâm          |
+| Phím | Lệnh         | Ghi chú                  |
+| ---- | ------------ | ------------------------ |
+| Q    | Construction | Chuyển sang construction |
+| W    | Centerline   | Vẽ đường tâm             |
