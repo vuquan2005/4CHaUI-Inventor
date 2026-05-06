@@ -1,0 +1,22 @@
+{
+    "material-icon-theme.folders.associations": {
+        "3D": "container",
+        "Sketch": "mock"
+    },
+    "files.associations": {
+        "**/3D/**/*.ipt": "ipt-3d",
+        "**/Sketch/**/*.ipt": "ipt-sketch",
+        "*.iam": "inventor-assembly",
+        "*.ipj": "inventor-project",
+        "*.ipn": "inventor-presentation",
+        "*.ipt": "ipt-3d"
+    },
+
+    "material-icon-theme.languages.associations": {
+        "ipt-3d": "taskfile",
+        "ipt-sketch": "architecture",
+        "inventor-assembly": "laravel",
+        "inventor-project": "dll",
+        "inventor-presentation": "pnpm"
+    }
+}
