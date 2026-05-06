@@ -13,8 +13,27 @@ const CONFIG = {
 // --- CÁC HÀM TIỆN ÍCH (UTILITIES) ---
 
 async function getSubDirectories(baseDir) {
-    const items = await fs.readdir(baseDir, { withFileTypes: true });
-    return items.filter((item) => item.isDirectory()).map((item) => item.name);
+    let results = [];
+    async function scanDir(dir) {
+        const items = await fs.readdir(dir, { withFileTypes: true });
+        
+        // Kiểm tra xem thư mục hiện tại có file .ipj nào không
+        const hasIpj = items.some(item => item.isFile() && item.name.toLowerCase().endsWith('.ipj'));
+        if (hasIpj && dir !== baseDir) {
+            // Nếu có, thêm đường dẫn tương đối vào kết quả
+            results.push(path.relative(baseDir, dir).replace(/\\/g, '/'));
+        } else {
+            // Nếu không, tiếp tục quét các thư mục con
+            for (const item of items) {
+                if (item.isDirectory() && item.name !== 'node_modules' && !item.name.startsWith('.')) {
+                    await scanDir(path.join(dir, item.name));
+                }
+            }
+        }
+    }
+    
+    await scanDir(baseDir);
+    return results;
 }
 
 async function isDirectoryExists(dirPath) {
@@ -114,6 +133,16 @@ async function processSingleFolder(folderName, baseDir) {
     if (!hasImgFolder) return null;
 
     try {
+        const baseName = path.basename(folderPath);
+        const items = await fs.readdir(folderPath, { withFileTypes: true });
+        const ipjFile = items.find(item => item.isFile() && item.name.toLowerCase().endsWith('.ipj'));
+        
+        if (ipjFile) {
+            const ipjName = path.basename(ipjFile.name, path.extname(ipjFile.name));
+            if (ipjName !== baseName) {
+                console.warn(`\n⚠️ CẢNH BÁO: Tên thư mục "${baseName}" khác với tên file project "${ipjFile.name}". Điều này có thể gây nhầm lẫn!\n`);
+            }
+        }
         const imageFiles = await getImageFiles(imgDirPath);
 
         if (imageFiles.length === 0) {

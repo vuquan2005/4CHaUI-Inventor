@@ -9,6 +9,36 @@ $CONFIG = @{
 
 # --- HÀM TIỆN ÍCH ---
 
+function Get-SubDirectories($baseDir) {
+    function Scan-Dir($currentDir) {
+        $items = Get-ChildItem -Path $currentDir
+        
+        # Kiểm tra xem thư mục hiện tại có file .ipj nào không
+        $hasIpj = $false
+        foreach ($item in $items) {
+            if (-not $item.PSIsContainer -and $item.Extension.ToLower() -eq '.ipj') {
+                $hasIpj = $true
+                break
+            }
+        }
+        
+        if ($hasIpj -and $currentDir -ne $baseDir) {
+            # Nếu có, thêm đường dẫn tương đối vào kết quả
+            $relativePath = $currentDir.Substring($baseDir.Length + 1).Replace('\', '/')
+            Write-Output $relativePath
+        } else {
+            # Nếu không, tiếp tục quét các thư mục con
+            foreach ($item in $items) {
+                if ($item.PSIsContainer -and $item.Name -ne 'node_modules' -and -not $item.Name.StartsWith('.')) {
+                    Scan-Dir $item.FullName
+                }
+            }
+        }
+    }
+    
+    Scan-Dir $baseDir
+}
+
 function Get-ImageFiles($dirPath) {
     if (-not (Test-Path $dirPath)) { return $null }
     return Get-ChildItem -Path $dirPath | Where-Object { 
@@ -60,21 +90,32 @@ function Get-RootSection($folderName, $imageFiles) {
 
 # --- XỬ LÝ CHÍNH ---
 
-$baseDir = Get-Location
-$subDirs = Get-ChildItem -Path $baseDir -Directory
+$baseDir = $PSScriptRoot
+if ([string]::IsNullOrEmpty($baseDir)) {
+    $baseDir = (Get-Location).Path
+}
+
+$directories = Get-SubDirectories $baseDir
 $foldersData = @()
 
-Write-Host "🚀 Bắt đầu quét thư mục..." -ForegroundColor Cyan
-
-foreach ($dir in $subDirs) {
-    $folderName = $dir.Name
-    $imgDirPath = Join-Path $dir.FullName "img"
+foreach ($folderName in $directories) {
+    $folderPath = Join-Path $baseDir $folderName
+    $imgDirPath = Join-Path $folderPath "img"
     
     if (Test-Path $imgDirPath) {
+        $baseName = Split-Path -Leaf $folderPath
+        $ipjFile = Get-ChildItem -Path $folderPath -File | Where-Object { $_.Extension.ToLower() -eq '.ipj' } | Select-Object -First 1
+        
+        if ($ipjFile) {
+            $ipjName = $ipjFile.BaseName
+            if ($ipjName -ne $baseName) {
+                Write-Host "`n⚠️ CẢNH BÁO: Tên thư mục `"$baseName`" khác với tên file project `"$($ipjFile.Name)`". Điều này có thể gây nhầm lẫn!`n" -ForegroundColor Yellow
+            }
+        }
+
         $imageFiles = Get-ImageFiles $imgDirPath
         
         if ($imageFiles -and $imageFiles.Count -gt 0) {
-            Write-Host "Processing: $folderName" -ForegroundColor Yellow
             
             # Tạo nội dung cho README con
             $subMdContent = "# $folderName`n`n"
@@ -87,7 +128,7 @@ foreach ($dir in $subDirs) {
             }
             
             # Ghi file README con
-            $subMdPath = Join-Path $dir.FullName $CONFIG.MD_FILENAME
+            $subMdPath = Join-Path $folderPath $CONFIG.MD_FILENAME
             Write-Utf8NoBomFile -path $subMdPath -content $subMdContent
 
             # Lưu dữ liệu để làm README gốc
@@ -95,6 +136,11 @@ foreach ($dir in $subDirs) {
                 FolderName = $folderName
                 ImageFiles = $imageFiles
             }
+            
+            Write-Host "Đã tạo thành công: $subMdPath"
+        }
+        else {
+            Write-Host "Bỏ qua: $imgDirPath (Không có file ảnh nào)"
         }
     }
 }
@@ -108,10 +154,10 @@ if ($foldersData.Count -gt 0) {
     
     $rootMdPath = Join-Path $baseDir $CONFIG.MD_FILENAME
     Write-Utf8NoBomFile -path $rootMdPath -content $rootMdContent
-    Write-Host "✅ Đã tạo thành công README gốc: $rootMdPath" -ForegroundColor Green
+    Write-Host "Đã tạo thành công: $rootMdPath"
 }
 else {
-    Write-Host "⚠️ Không tìm thấy thư mục nào hợp lệ." -ForegroundColor Red
+    Write-Host "Không có thư mục nào có ảnh để tạo README gốc."
 }
 
-Write-Host "🏁 Hoàn tất!" -ForegroundColor Cyan
+Write-Host "✅ Quá trình tạo file markdown đã hoàn tất!" -ForegroundColor Cyan
