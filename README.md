@@ -1,6 +1,31 @@
 # 4CHaUI-Inventor
 
 <details>
+<summary>3D/B1</summary>
+
+![b1.png](3D/B1/img/b1.png "b1.png")
+
+![b10.png](3D/B1/img/b10.png "b10.png")
+
+![b3.png](3D/B1/img/b3.png "b3.png")
+
+![b4.png](3D/B1/img/b4.png "b4.png")
+
+![b5.png](3D/B1/img/b5.png "b5.png")
+
+![b6.png](3D/B1/img/b6.png "b6.png")
+
+![b9.png](3D/B1/img/b9.png "b9.png")
+
+![DP806.png](3D/B1/img/DP806.png "DP806.png")
+
+![DP807.png](3D/B1/img/DP807.png "DP807.png")
+
+![DP816.png](3D/B1/img/DP816.png "DP816.png")
+
+</details>
+
+<details>
 <summary>Sketch/5ngaytuhoc</summary>
 
 ![b1.png](Sketch/5ngaytuhoc/img/b1.png "b1.png")
