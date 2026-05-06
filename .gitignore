@@ -7,5 +7,5 @@
 *.tmp
 
 # Inventor folders
-*/OldVersions/
-*/Backup/
+OldVersions/
+Backup/
