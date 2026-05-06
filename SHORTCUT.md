@@ -44,6 +44,7 @@
 | V    | Mirror                     | Đối xứng         |
 | R1   | Two Point Center Rectangle | Rectangle 2 điểm |
 | R4   | Rectangular Pattern        | Pattern chữ nhật |
+| R5   | Circular Pattern           | Pattern tròn     |
 | G    | Project Geometry           | Chiếu hình       |
 
 ## ⚡ 5. Phím tắt mở rộng
