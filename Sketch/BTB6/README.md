@@ -1,6 +1,6 @@
 # Sketch/BTB6
 
-[📥 Tải Sketch/BTB6](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/Sketch/BTB6/Sketch/BTB6.zip)
+[📥 Tải Sketch/BTB6](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB6/BTB6.zip)
 
 <details>
 <summary>BBCode</summary>
@@ -8,7 +8,7 @@
 ```
 [url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/Sketch/BTB6]Sketch/BTB6[/url]
 
-[url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/Sketch/BTB6/Sketch/BTB6.zip]Sketch/BTB6.zip[/url]
+[url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/BTB6/BTB6.zip]BTB6.zip[/url]
 
 Link ảnh:
 

@@ -1,6 +1,6 @@
 # 3D/B1
 
-[📥 Tải 3D/B1](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/3D/B1/3D/B1.zip)
+[📥 Tải 3D/B1](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/B1/B1.zip)
 
 <details>
 <summary>BBCode</summary>
@@ -8,7 +8,7 @@
 ```
 [url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/3D/B1]3D/B1[/url]
 
-[url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/3D/B1/3D/B1.zip]3D/B1.zip[/url]
+[url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/B1/B1.zip]B1.zip[/url]
 
 Link ảnh:
 

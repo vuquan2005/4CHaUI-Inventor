@@ -59,8 +59,8 @@ async function getImageFiles(dirPath) {
 /**
  * MỚI: Tạo nội dung link tải Release từ GitHub
  */
-function generateDownloadLink(folderName) {
-    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${folderName}/${folderName}.zip`;
+function generateDownloadLink(folderName, releaseName) {
+    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${releaseName}/${releaseName}.zip`;
     return `[📥 Tải ${folderName}](${downloadUrl})\n\n`;
 }
 
@@ -72,7 +72,7 @@ function generateMarkdownLinks(imageFiles) {
     return content;
 }
 
-function generateMyBBLinks(parentFolderName, imageFiles) {
+function generateMyBBLinks(parentFolderName, releaseName, imageFiles) {
     let content = "";
     content += `<details>\n`;
     content += `<summary>BBCode</summary>\n\n`;
@@ -82,8 +82,8 @@ function generateMyBBLinks(parentFolderName, imageFiles) {
     const folderUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/tree/${CONFIG.BRANCH}/${parentFolderName}`;
     content += `[url=${folderUrl}]${parentFolderName}[/url]\n\n`;
 
-    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${parentFolderName}/${parentFolderName}.zip`;
-    content += `[url=${downloadUrl}]${parentFolderName}.zip[/url]\n\n`;
+    const downloadUrl = `https://github.com/${CONFIG.GITHUB_USERNAME}/${CONFIG.REPO_NAME}/releases/download/${releaseName}/${releaseName}.zip`;
+    content += `[url=${downloadUrl}]${releaseName}.zip[/url]\n\n`;
 
     content += `Link ảnh:\n\n`;
 
@@ -153,9 +153,9 @@ async function processSingleFolder(folderName, baseDir) {
         // Xây dựng nội dung file
         let fileContent = `# ${folderName}\n\n`;
 
-        fileContent += generateDownloadLink(folderName);
+        fileContent += generateDownloadLink(folderName, baseName);
 
-        fileContent += generateMyBBLinks(folderName, imageFiles);
+        fileContent += generateMyBBLinks(folderName, baseName, imageFiles);
 
         fileContent += `## 📷 Hình ảnh\n\n`;
 

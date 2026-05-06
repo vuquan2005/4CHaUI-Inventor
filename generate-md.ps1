@@ -10,7 +10,7 @@ $CONFIG = @{
 # --- HÀM TIỆN ÍCH ---
 
 function Get-SubDirectories($baseDir) {
-    function Scan-Dir($currentDir) {
+    function Get-SubDirectoriesRecursive($currentDir) {
         $items = Get-ChildItem -Path $currentDir
         
         # Kiểm tra xem thư mục hiện tại có file .ipj nào không
@@ -30,13 +30,13 @@ function Get-SubDirectories($baseDir) {
             # Nếu không, tiếp tục quét các thư mục con
             foreach ($item in $items) {
                 if ($item.PSIsContainer -and $item.Name -ne 'node_modules' -and -not $item.Name.StartsWith('.')) {
-                    Scan-Dir $item.FullName
+                    Get-SubDirectoriesRecursive $item.FullName
                 }
             }
         }
     }
     
-    Scan-Dir $baseDir
+    Get-SubDirectoriesRecursive $baseDir
 }
 
 function Get-ImageFiles($dirPath) {
@@ -54,20 +54,20 @@ function Write-Utf8NoBomFile($path, $content) {
     [System.IO.File]::WriteAllText($path, $content, $Utf8NoBom)
 }
 
-function Get-DownloadLink($folderName) {
-    $url = "https://github.com/$($CONFIG.GITHUB_USERNAME)/$($CONFIG.REPO_NAME)/releases/download/$folderName/$folderName.zip"
+function Get-DownloadLink($folderName, $releaseName) {
+    $url = "https://github.com/$($CONFIG.GITHUB_USERNAME)/$($CONFIG.REPO_NAME)/releases/download/$releaseName/$releaseName.zip"
     return "[📥 Tải $folderName]($url)`n`n"
 }
 
-function Get-MyBBLinks($folderName, $imageFiles) {
+function Get-MyBBLinks($folderName, $releaseName, $imageFiles) {
     $content = "<details>`n<summary>BBCode</summary>`n`n"
     $content += "```````n"
     
     $folderUrl = "https://github.com/$($CONFIG.GITHUB_USERNAME)/$($CONFIG.REPO_NAME)/tree/$($CONFIG.BRANCH)/$folderName"
     $content += "[url=$folderUrl]$folderName[/url]`n`n"
     
-    $downloadUrl = "https://github.com/$($CONFIG.GITHUB_USERNAME)/$($CONFIG.REPO_NAME)/releases/download/$folderName/$folderName.zip"
-    $content += "[url=$downloadUrl]$folderName.zip[/url]`n`n"
+    $downloadUrl = "https://github.com/$($CONFIG.GITHUB_USERNAME)/$($CONFIG.REPO_NAME)/releases/download/$releaseName/$releaseName.zip"
+    $content += "[url=$downloadUrl]$releaseName.zip[/url]`n`n"
     
     $content += "Link ảnh:`n`n"
     foreach ($img in $imageFiles) {
@@ -119,8 +119,8 @@ foreach ($folderName in $directories) {
             
             # Tạo nội dung cho README con
             $subMdContent = "# $folderName`n`n"
-            $subMdContent += Get-DownloadLink $folderName
-            $subMdContent += Get-MyBBLinks $folderName $imageFiles
+            $subMdContent += Get-DownloadLink $folderName $baseName
+            $subMdContent += Get-MyBBLinks $folderName $baseName $imageFiles
             $subMdContent += "## 📷 Hình ảnh`n`n"
             
             foreach ($img in $imageFiles) {
