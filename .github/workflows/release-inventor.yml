@@ -59,13 +59,18 @@ jobs:
 
                     echo "🛠️ Processing project: $DIR (Release name: $BASENAME)"
 
-                    zip -r "${BASENAME}.zip" "$DIR" \
+                    WORK_DIR=$(pwd)
+                    PARENT_DIR=$(dirname "$DIR")
+                    
+                    pushd "$PARENT_DIR" > /dev/null
+                    zip -r "$WORK_DIR/${BASENAME}.zip" "$BASENAME" \
                       -x "*/OldVersions/*" \
                       -x "*.bak" \
                       -x "*.lck" \
                       -x "*.tmp" \
                       -x "*/.git*" \
                       -x "*/node_modules/*"
+                    popd > /dev/null
 
                     echo "♻️ Updating Rolling Tag for: $BASENAME"
                     gh release delete "$BASENAME" --cleanup-tag -y || true
