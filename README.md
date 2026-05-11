@@ -26,6 +26,15 @@
 </details>
 
 <details>
+<summary>3D/B2</summary>
+
+![B1.png](3D/B2/img/B1.png "B1.png")
+
+![B2.png](3D/B2/img/B2.png "B2.png")
+
+</details>
+
+<details>
 <summary>Sketch/5ngaytuhoc</summary>
 
 ![b1.png](Sketch/5ngaytuhoc/img/b1.png "b1.png")
