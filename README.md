@@ -80,6 +80,12 @@
 
 ![b2.png](3D/B4/img/b2.png "b2.png")
 
+![b3.png](3D/B4/img/b3.png "b3.png")
+
+![b4.png](3D/B4/img/b4.png "b4.png")
+
+![b5.png](3D/B4/img/b5.png "b5.png")
+
 ![ConTruot.png](3D/B4/img/ConTruot.png "ConTruot.png")
 
 ![GiaDo.png](3D/B4/img/GiaDo.png "GiaDo.png")

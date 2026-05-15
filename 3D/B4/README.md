@@ -16,6 +16,12 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b2.png[/img]
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b3.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b4.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b5.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/ConTruot.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/GiaDo.png[/img]
@@ -31,6 +37,12 @@ Link ảnh:
 ![b1.png](img/b1.png "b1.png")
 
 ![b2.png](img/b2.png "b2.png")
+
+![b3.png](img/b3.png "b3.png")
+
+![b4.png](img/b4.png "b4.png")
+
+![b5.png](img/b5.png "b5.png")
 
 ![ConTruot.png](img/ConTruot.png "ConTruot.png")
 
