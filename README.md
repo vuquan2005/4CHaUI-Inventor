@@ -225,3 +225,14 @@
 
 </details>
 
+<details>
+<summary>Sketch/SketchTest</summary>
+
+![Motor.png](Sketch/SketchTest/img/Motor.png "Motor.png")
+
+![The Cat.png](Sketch/SketchTest/img/The Cat.png "The Cat.png")
+
+![Ô TÔ 4C.png](Sketch/SketchTest/img/Ô TÔ 4C.png "Ô TÔ 4C.png")
+
+</details>
+
