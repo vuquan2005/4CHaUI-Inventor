@@ -95,6 +95,21 @@
 </details>
 
 <details>
+<summary>3D/B5</summary>
+
+![b1.png](3D/B5/img/b1.png "b1.png")
+
+![b2.png](3D/B5/img/b2.png "b2.png")
+
+![b3.png](3D/B5/img/b3.png "b3.png")
+
+![b4.png](3D/B5/img/b4.png "b4.png")
+
+![b5.png](3D/B5/img/b5.png "b5.png")
+
+</details>
+
+<details>
 <summary>Sketch/5ngaytuhoc</summary>
 
 ![b1.png](Sketch/5ngaytuhoc/img/b1.png "b1.png")
