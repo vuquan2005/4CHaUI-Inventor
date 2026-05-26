@@ -1,38 +1,38 @@
-# Assambly/b1/clamp
+# Assembly/b1/clamp
 
-[📥 Tải Assambly/b1/clamp](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/clamp/clamp.zip)
+[📥 Tải Assembly/b1/clamp](https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/clamp/clamp.zip)
 
 <details>
 <summary>BBCode</summary>
 
 ```
-[url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/Assambly/b1/clamp]Assambly/b1/clamp[/url]
+[url=https://github.com/vuquan2005/4CHaUI-Inventor/tree/main/Assembly/b1/clamp]Assembly/b1/clamp[/url]
 
 [url=https://github.com/vuquan2005/4CHaUI-Inventor/releases/download/clamp/clamp.zip]clamp.zip[/url]
 
 Link ảnh:
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Base.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Base.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/BaseSpacer.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/BaseSpacer.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/BaseSupport.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/BaseSupport.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Elbow.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Elbow.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Foot.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Foot.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/FootPin.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/FootPin.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Hinge.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Hinge.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Lever.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Lever.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/ManualClamp.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/ManualClamp.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Rod.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Rod.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assambly/b1/clamp/img/Tee.png[/img]
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b1/clamp/img/Tee.png[/img]
 
 ```
 
