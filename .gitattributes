@@ -1,5 +1,10 @@
 * text=auto eol=lf
 *.{bat,cmd,ps1} text eol=crlf
+*.{jpg,jpeg,png,gif,ico} binary
+*.{mp4,avi,mkv,wmv} binary
+
+*.{ipt,iam,idw,ipn,ipj,ipk} lfs diff=autodetect
+
 
 # Inventor files (binary)
 *.ipt binary
