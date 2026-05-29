@@ -144,6 +144,57 @@
 </details>
 
 <details>
+<summary>Assembly/b2</summary>
+
+![Base.png](Assembly/b2/img/Base.png "Base.png")
+
+![BearingSuport.png](Assembly/b2/img/BearingSuport.png "BearingSuport.png")
+
+![CounterweightA.png](Assembly/b2/img/CounterweightA.png "CounterweightA.png")
+
+![CounterweightB.png](Assembly/b2/img/CounterweightB.png "CounterweightB.png")
+
+![Crankrod.png](Assembly/b2/img/Crankrod.png "Crankrod.png")
+
+![CrankShaft.png](Assembly/b2/img/CrankShaft.png "CrankShaft.png")
+
+![Crosshead.png](Assembly/b2/img/Crosshead.png "Crosshead.png")
+
+![Cylinder.png](Assembly/b2/img/Cylinder.png "Cylinder.png")
+
+![CylinderCover.png](Assembly/b2/img/CylinderCover.png "CylinderCover.png")
+
+![CylinderPacking.png](Assembly/b2/img/CylinderPacking.png "CylinderPacking.png")
+
+![Flywheel.png](Assembly/b2/img/Flywheel.png "Flywheel.png")
+
+![Flywheelshaft.png](Assembly/b2/img/Flywheelshaft.png "Flywheelshaft.png")
+
+![Heat Exchange Piston Exhaust.png](Assembly/b2/img/Heat Exchange Piston Exhaust.png "Heat Exchange Piston Exhaust.png")
+
+![HeatExchangeCylinder.png](Assembly/b2/img/HeatExchangeCylinder.png "HeatExchangeCylinder.png")
+
+![HeatExchangeCylinderhead.png](Assembly/b2/img/HeatExchangeCylinderhead.png "HeatExchangeCylinderhead.png")
+
+![HeatExchangePistonHead.png](Assembly/b2/img/HeatExchangePistonHead.png "HeatExchangePistonHead.png")
+
+![HeatExchangePistonShaft.png](Assembly/b2/img/HeatExchangePistonShaft.png "HeatExchangePistonShaft.png")
+
+![HeatExchangePistonTube.png](Assembly/b2/img/HeatExchangePistonTube.png "HeatExchangePistonTube.png")
+
+![Piston.png](Assembly/b2/img/Piston.png "Piston.png")
+
+![PistonPin.png](Assembly/b2/img/PistonPin.png "PistonPin.png")
+
+![Slide.png](Assembly/b2/img/Slide.png "Slide.png")
+
+![Standard.png](Assembly/b2/img/Standard.png "Standard.png")
+
+![Support.png](Assembly/b2/img/Support.png "Support.png")
+
+</details>
+
+<details>
 <summary>Sketch/5ngaytuhoc</summary>
 
 ![b1.png](Sketch/5ngaytuhoc/img/b1.png "b1.png")
