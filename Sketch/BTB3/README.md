@@ -14,6 +14,8 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB3/img/6CAH.png[/img]
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB3/img/LogoAsusTUF.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB3/img/b2.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB3/img/b3.png[/img]
@@ -26,8 +28,6 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB3/img/b7.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB3/img/LogoAsusTUF.png[/img]
-
 ```
 
 </details>
@@ -35,6 +35,8 @@ Link ảnh:
 ## 📷 Hình ảnh
 
 ![6CAH.png](img/6CAH.png "6CAH.png")
+
+![LogoAsusTUF.png](img/LogoAsusTUF.png "LogoAsusTUF.png")
 
 ![b2.png](img/b2.png "b2.png")
 
@@ -47,6 +49,4 @@ Link ảnh:
 ![b6.png](img/b6.png "b6.png")
 
 ![b7.png](img/b7.png "b7.png")
-
-![LogoAsusTUF.png](img/LogoAsusTUF.png "LogoAsusTUF.png")
 

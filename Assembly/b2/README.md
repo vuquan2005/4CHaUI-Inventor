@@ -20,9 +20,9 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/CounterweightB.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/Crankrod.png[/img]
-
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/CrankShaft.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/Crankrod.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/Crosshead.png[/img]
 
@@ -72,9 +72,9 @@ Link ảnh:
 
 ![CounterweightB.png](img/CounterweightB.png "CounterweightB.png")
 
-![Crankrod.png](img/Crankrod.png "Crankrod.png")
-
 ![CrankShaft.png](img/CrankShaft.png "CrankShaft.png")
+
+![Crankrod.png](img/Crankrod.png "Crankrod.png")
 
 ![Crosshead.png](img/Crosshead.png "Crosshead.png")
 

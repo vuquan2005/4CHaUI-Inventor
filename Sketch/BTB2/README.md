@@ -14,6 +14,8 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/4LO.png[/img]
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/B2-7.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/b2-1.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/b2-2.png[/img]
@@ -26,8 +28,6 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/b2-6.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/B2-7.png[/img]
-
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Sketch/BTB2/img/b2.png[/img]
 
 ```
@@ -37,6 +37,8 @@ Link ảnh:
 ## 📷 Hình ảnh
 
 ![4LO.png](img/4LO.png "4LO.png")
+
+![B2-7.png](img/B2-7.png "B2-7.png")
 
 ![b2-1.png](img/b2-1.png "b2-1.png")
 
@@ -49,8 +51,6 @@ Link ảnh:
 ![b2-5.png](img/b2-5.png "b2-5.png")
 
 ![b2-6.png](img/b2-6.png "b2-6.png")
-
-![B2-7.png](img/B2-7.png "B2-7.png")
 
 ![b2.png](img/b2.png "b2.png")
 

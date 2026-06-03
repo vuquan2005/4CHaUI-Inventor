@@ -12,6 +12,12 @@
 
 Link ảnh:
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/DP806.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/DP807.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/DP816.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/b1.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/b10.png[/img]
@@ -26,17 +32,17 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/b9.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/DP806.png[/img]
-
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/DP807.png[/img]
-
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B1/img/DP816.png[/img]
-
 ```
 
 </details>
 
 ## 📷 Hình ảnh
+
+![DP806.png](img/DP806.png "DP806.png")
+
+![DP807.png](img/DP807.png "DP807.png")
+
+![DP816.png](img/DP816.png "DP816.png")
 
 ![b1.png](img/b1.png "b1.png")
 
@@ -51,10 +57,4 @@ Link ảnh:
 ![b6.png](img/b6.png "b6.png")
 
 ![b9.png](img/b9.png "b9.png")
-
-![DP806.png](img/DP806.png "DP806.png")
-
-![DP807.png](img/DP807.png "DP807.png")
-
-![DP816.png](img/DP816.png "DP816.png")
 

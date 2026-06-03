@@ -12,6 +12,12 @@
 
 Link ảnh:
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/ConTruot.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/GiaDo.png[/img]
+
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/Lego.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b1.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b2.png[/img]
@@ -22,17 +28,17 @@ Link ảnh:
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/b5.png[/img]
 
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/ConTruot.png[/img]
-
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/GiaDo.png[/img]
-
-[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/3D/B4/img/Lego.png[/img]
-
 ```
 
 </details>
 
 ## 📷 Hình ảnh
+
+![ConTruot.png](img/ConTruot.png "ConTruot.png")
+
+![GiaDo.png](img/GiaDo.png "GiaDo.png")
+
+![Lego.png](img/Lego.png "Lego.png")
 
 ![b1.png](img/b1.png "b1.png")
 
@@ -43,10 +49,4 @@ Link ảnh:
 ![b4.png](img/b4.png "b4.png")
 
 ![b5.png](img/b5.png "b5.png")
-
-![ConTruot.png](img/ConTruot.png "ConTruot.png")
-
-![GiaDo.png](img/GiaDo.png "GiaDo.png")
-
-![Lego.png](img/Lego.png "Lego.png")
 
