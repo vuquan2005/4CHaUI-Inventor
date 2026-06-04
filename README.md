@@ -3,12 +3,6 @@
 <details>
 <summary>3D/B1</summary>
 
-![DP806.png](3D/B1/img/DP806.png "DP806.png")
-
-![DP807.png](3D/B1/img/DP807.png "DP807.png")
-
-![DP816.png](3D/B1/img/DP816.png "DP816.png")
-
 ![b1.png](3D/B1/img/b1.png "b1.png")
 
 ![b10.png](3D/B1/img/b10.png "b10.png")
@@ -22,6 +16,12 @@
 ![b6.png](3D/B1/img/b6.png "b6.png")
 
 ![b9.png](3D/B1/img/b9.png "b9.png")
+
+![DP806.png](3D/B1/img/DP806.png "DP806.png")
+
+![DP807.png](3D/B1/img/DP807.png "DP807.png")
+
+![DP816.png](3D/B1/img/DP816.png "DP816.png")
 
 </details>
 
@@ -76,12 +76,6 @@
 <details>
 <summary>3D/B4</summary>
 
-![ConTruot.png](3D/B4/img/ConTruot.png "ConTruot.png")
-
-![GiaDo.png](3D/B4/img/GiaDo.png "GiaDo.png")
-
-![Lego.png](3D/B4/img/Lego.png "Lego.png")
-
 ![b1.png](3D/B4/img/b1.png "b1.png")
 
 ![b2.png](3D/B4/img/b2.png "b2.png")
@@ -91,6 +85,12 @@
 ![b4.png](3D/B4/img/b4.png "b4.png")
 
 ![b5.png](3D/B4/img/b5.png "b5.png")
+
+![ConTruot.png](3D/B4/img/ConTruot.png "ConTruot.png")
+
+![GiaDo.png](3D/B4/img/GiaDo.png "GiaDo.png")
+
+![Lego.png](3D/B4/img/Lego.png "Lego.png")
 
 </details>
 
@@ -154,9 +154,9 @@
 
 ![CounterweightB.png](Assembly/b2/img/CounterweightB.png "CounterweightB.png")
 
-![CrankShaft.png](Assembly/b2/img/CrankShaft.png "CrankShaft.png")
-
 ![Crankrod.png](Assembly/b2/img/Crankrod.png "Crankrod.png")
+
+![CrankShaft.png](Assembly/b2/img/CrankShaft.png "CrankShaft.png")
 
 ![Crosshead.png](Assembly/b2/img/Crosshead.png "Crosshead.png")
 
@@ -236,8 +236,6 @@
 
 ![4LO.png](Sketch/BTB2/img/4LO.png "4LO.png")
 
-![B2-7.png](Sketch/BTB2/img/B2-7.png "B2-7.png")
-
 ![b2-1.png](Sketch/BTB2/img/b2-1.png "b2-1.png")
 
 ![b2-2.png](Sketch/BTB2/img/b2-2.png "b2-2.png")
@@ -250,6 +248,8 @@
 
 ![b2-6.png](Sketch/BTB2/img/b2-6.png "b2-6.png")
 
+![B2-7.png](Sketch/BTB2/img/B2-7.png "B2-7.png")
+
 ![b2.png](Sketch/BTB2/img/b2.png "b2.png")
 
 </details>
@@ -258,8 +258,6 @@
 <summary>Sketch/BTB3</summary>
 
 ![6CAH.png](Sketch/BTB3/img/6CAH.png "6CAH.png")
-
-![LogoAsusTUF.png](Sketch/BTB3/img/LogoAsusTUF.png "LogoAsusTUF.png")
 
 ![b2.png](Sketch/BTB3/img/b2.png "b2.png")
 
@@ -272,6 +270,8 @@
 ![b6.png](Sketch/BTB3/img/b6.png "b6.png")
 
 ![b7.png](Sketch/BTB3/img/b7.png "b7.png")
+
+![LogoAsusTUF.png](Sketch/BTB3/img/LogoAsusTUF.png "LogoAsusTUF.png")
 
 </details>
 
@@ -316,9 +316,9 @@
 <details>
 <summary>Sketch/BTB6</summary>
 
-![HaUI.png](Sketch/BTB6/img/HaUI.png "HaUI.png")
-
 ![engine.png](Sketch/BTB6/img/engine.png "engine.png")
+
+![HaUI.png](Sketch/BTB6/img/HaUI.png "HaUI.png")
 
 ![mask.png](Sketch/BTB6/img/mask.png "mask.png")
 
