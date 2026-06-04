@@ -12,6 +12,8 @@
 
 Link ảnh:
 
+[img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/Assembly1.png[/img]
+
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/Base.png[/img]
 
 [img]https://raw.githubusercontent.com/vuquan2005/4CHaUI-Inventor/main/Assembly/b2/img/BearingSuport.png[/img]
@@ -63,6 +65,8 @@ Link ảnh:
 </details>
 
 ## 📷 Hình ảnh
+
+![Assembly1.png](img/Assembly1.png "Assembly1.png")
 
 ![Base.png](img/Base.png "Base.png")
 

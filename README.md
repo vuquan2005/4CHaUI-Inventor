@@ -146,6 +146,8 @@
 <details>
 <summary>Assembly/b2</summary>
 
+![Assembly1.png](Assembly/b2/img/Assembly1.png "Assembly1.png")
+
 ![Base.png](Assembly/b2/img/Base.png "Base.png")
 
 ![BearingSuport.png](Assembly/b2/img/BearingSuport.png "BearingSuport.png")
